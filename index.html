@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+  <meta charset="UTF-8" />
+  <title>Account System</title>
+</head>
+<body>
+  <h1>Welcome</h1>
+
+  <!-- LOGIN FORM -->
+  <form id="loginForm">
+    <h2>Login</h2>
+    <label>Name:</label><br>
+    <input type="text" id="loginUsername"><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="loginPassword"><br><br>
+
+    <button type="submit">Login</button><br><br>
+
+    <small><a href="#" id="showSignup">Create account </a><br> <br> <a href="#" id="showForgot">Forget password</a></small>
+  </form>
+
+  <!-- SIGNUP FORM -->
+  <form id="signupForm" style="display: none;">
+    <h2>Create password</h2>
+    <label>Izina:</label><br>
+    <input type="text" id="signupUsername"><br><br>
+
+    <label>password:</label><br>
+    <input type="password" id="signupPassword"><br><br>
+
+    <label>put password:</label><br>
+    <input type="password" id="confirmPassword"><br><br>
+
+    <button type="submit">Create</button><br><br>
+    <small><a href="#" id="showLogin">Injira</a></small>
+  </form>
+
+  <!-- FORGOT PASSWORD -->
+  <div id="forgotBox" style="display: none;">
+    <h2>password</h2>
+    <label>write name:</label><br>
+    <input type="text" id="forgotUsername"><br><br>
+    <button id="recoverBtn">Subiza</button><br><br>
+    <small><a href="#" id="backToLogin">Subira kuri Login</a></small>
+  </div>
+
+  <!-- MESSAGE + DASHBOARD -->
+  <div id="message" style="color: red; margin-top: 15px;"></div>
+
+  <div id="dashboard" style="display: none;">
+    <h2>Dashboard</h2>
+    <p id="welcomeMessage"></p>
+    <button id="logoutBtn">logouts</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
